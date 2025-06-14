@@ -54,18 +54,22 @@ ol {
   display: flex;
   align-items: end;
   gap: 30px;
+  width: 1140px;
+  margin: auto;
 }
 
 .result {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 78px;
 }
 
 .result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -78,7 +82,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  gap: 38px;
+  gap: 40px;
 }
 
 .search-form__fieldset {
@@ -107,6 +111,7 @@ ol {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  line-height: 22px;
 }
 
 .search-form__textfield::placeholder {
@@ -164,15 +169,18 @@ ol {
 .search-form__submit-button {
   align-self: end;
   width: 194px;
+  height: 34px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  height: 534px;
 }
 
 .title {
+  margin-bottom: 26px;
   color: #fff;
   font-family: Oswald, sans-serif;
   font-size: 75px;
@@ -184,13 +192,13 @@ ol {
   color: #545050;
 }
 
-.content__list {
+.content__list-container {
   position: relative;
-  max-block-size: 298px;
+  block-size: 300px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  gap: 30px; 
+  gap: 30px;
 }
 
 .content__list-item:has(.content__card-link_current) {
@@ -220,7 +228,7 @@ ol {
   justify-content: space-between;
 }
 
-.content__video-card:hover .content__card-link {
+.content__card-link:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
   text-decoration-thickness: 1px;
@@ -230,9 +238,11 @@ ol {
   flex-grow: 1;
   max-width: 200px;
   color: #fff;
+  gap: 6px;
 }
 
 .content__video-card-title {
+  max-inline-size: 200px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -251,7 +261,8 @@ ol {
   overflow: hidden;
   padding-top: 6px;
   font-weight: 400;
-  line-height: 90%;
+  line-height: 16px;
+  max-inline-size: 200px;
 }
 
 .content__video-card-thumbnail {
@@ -276,6 +287,7 @@ ol {
   font-size: 18px;
   background-color: transparent;
   cursor: pointer;
+  line-height: 22px;
 }
 
 .button:focus {
