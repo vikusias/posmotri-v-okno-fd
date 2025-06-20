@@ -194,17 +194,18 @@ ol {
 }
 
 .content__list-container {
+  display: grid;
   position: relative;
   block-size: 298px;
   overflow: auto;
-  gap: 30px;
+  gap: 43px;
   padding-bottom: 3px;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 24px;
   align-self: baseline;
   justify-content: space-between;
   /*padding-top: 3px;*/
